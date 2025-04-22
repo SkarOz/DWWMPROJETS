@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ceci est le titre principal du document pour l'exercice</title>
+        <link href="FichierNiveau2CSS.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <h1>Ceci est le premier titre pour l'exercice</h1>
+        <p>Ceci est  le premier corps de texte pour l'exercice</p>
+        <aside>Ceci est un test de la fonction aside</aside>
+
+        <h2>Ceci est le second titre pour l'exercice</h2>
+
+        <h3>Ceci est le troisème titre pour l'exercice</h3>
+    
+        <details>
+         <summary>Cliquez pour révéler le menu déroulant de navigation</summary>
+            <nav>
+                <a href=#Image>Image</a>
+                <a href=#lecteuraudio>Audio</a>
+                <a href=#6dofus>Les 6 Dofus Interractifs</a>
+                <a href=#listerandom>Liste des plats dans le désordre</a>
+                <a href=#listeordonnee>Liste des plats dans l'ordre</a>1
+                <a href=#liensite>Lien vers e site de Dofus</a>
+                <a href=#emploisdutemps>Emplois du temps de la formation</a>
+                
+
+            </nav>
+        </details>
+
+
+        <figure>
+            <img src="images/emeraude.png" id="Image"> 
+            <figcaption>Le Dofus Emeraude tiré du MMORPG Dofus</figcaption>
+        </figure>
+        
+        <ul id="listerandom">
+            <li>Sushi</li>
+            <li>Boeuf Bourgignon</li>
+            <li>Blaquette de veau</li>
+            <li>Civet de lapin</li>
+            <li>Lasagne</li>
+            <li>Tomate Mozarella</li>
+        </ul>
+
+        <ol id="listeordonnee">
+            <li>Tomate Mozarella</li>
+            <li>Blanquette de veau</li>
+            <li>Boeuf Bourgignon</li>
+            <li>Lasagne</li>
+            <li>Civet de lapin</li>
+            <li>Sushi</li>
+        </ol>
+
+        <p id="liensite">
+            Le lien vers
+            <a href="https://www.dofus.com/fr"> la page d'accueil du site officiel du MMORPG Dofus</a>
+        </p>
+
+        <table id="emploisdutemps">
+            <caption>Emplois du temps de la formation DWWM</caption>
+            <tbody>
+                <tr>
+                    <th scope="col">Horaire</th>
+                    <th scope="col">Lundi</th>
+                    <th scope="col">Mardi</th>
+                    <th scope="col">Mercredi</th>
+                    <th scope="col">Jeudi</th>
+                    <th scope="col">Vendredi</th>
+                </tr>
+                <tr>
+                    <th scope="row">Matin</th>
+                    <td scope="row">9h-12h</td>
+                    <td scope="col">8h-12h</td>
+                    <td scope="row">8h-12h</td>
+                    <td scope="row">8h-12h</td>
+                    <td scope="row">8h-12h</td>
+                </tr>
+                <tr>
+                    <th scope="row">Après Midi</th>
+                    <td scope="col">13h-17h</td>
+                    <td scope="col">13h-17h</td>
+                    <td scope="col">13h-17h</td>
+                    <td scope="col">13h-17h</td>
+                    <td scope="col">//////////</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <label for="name">Nom</label>
+            <input name="user_name" placeholder="Votre Nom" required/>
+
+            <label for="mail">E-mail</label>
+            <input name="email" placeholder="Votre adresse mail" required/>
+
+            <label for="message">Message</label>
+            <textarea placeholder="Votre message" required></textarea>
+
+            <button>Envoyer</button>
+        </form>
+
+        <video controls>
+            <source src="video/video illustration gratuite circulation en ville à Moscou.mp4">
+        </video>
+
+        <audio controls src="sound/gorila-315977.mp3" id="lecteuraudio"></audio>
+
+       <header>Titre de test de l'exercice 14</header>
+       <section>
+        <article>
+            <h1>Test de titre pour la fonction article</h1>
+            <p>Corps de texte pour faire des tests</p>
+        </article>
+        <footer>Footer de test pour l'exercice 14</footer>
+       </section>
+
+       <details>
+        <summary>Titre de test pour le summary</summary>
+        <p>Contenu de test</p>
+       </details>
+
+       <input list="couleurs">
+       <datalist id="couleurs">
+        <option value="Emeraude"></option>
+        <option value="Pourpre"></option>
+        <option value="Turquoise"></option>
+        <option value="Ocre"></option>
+        <option value="Ivoire"></option>
+        <option value="Ebene"></option>
+       </datalist>
+       
+     
+        <img src="images/Six_Dofus.png" usemap="#image-map" id="image6dofus">
+
+        <map name="image-map" id="6dofus">
+         <area target="_blank" alt="Dofus Turquoise" title="Dofus Turquoise" href="https://krosmoz.fandom.com/fr/wiki/Dofus_Turquoise" coords="653,433,129" shape="circle">
+         <area target="_blank" alt="Dofus Ivoire" title="Dofus Ivoire" href="https://krosmoz.fandom.com/fr/wiki/Dofus_Ivoire" coords="126,327,94" shape="circle">
+         <area target="_blank" alt="Dofus Pourpre" title="Dofus Pourpre" href="https://krosmoz.fandom.com/fr/wiki/Dofus_Pourpre" coords="318,211,65" shape="circle">
+         <area target="_blank" alt="Dofus Emeraude" title="Dofus Emeraude" href="https://krosmoz.fandom.com/fr/wiki/Dofus_%C3%89meraude" coords="642,146,48" shape="circle">
+         <area target="_blank" alt="Dofus Ocre" title="Dofus Ocre" href="https://krosmoz.fandom.com/fr/wiki/Dofus_Ocre" coords="971,201,68" shape="circle">
+         <area target="_blank" alt="Dofus Ebene" title="Dofus Ebene" href="https://krosmoz.fandom.com/fr/wiki/Dofus_%C3%89b%C3%A8ne" coords="1160,320,99" shape="circle">
+        </map> 
+    </body>
+</html>
