@@ -1,0 +1,31 @@
+.grille{
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo"
+        "main   main passif"
+        "main   main passif"
+        "footer footer footer";
+        grid-template-columns: 200px 1fr 250px;
+        grid-template-rows: auto 1fre 1fre auto;
+        gap: 10px;
+        min-height: 100hv;
+        padding: 10px;
+        background: #f0f0f0;
+}
+
+.logo{
+    grid-area: logo;
+    text-align: center;
+}
+
+.apropos{
+grid-area: main;
+background: white;
+padding: 10px;
+}
+
+.passif{
+    grid-area: passif;
+    background: aquamarine;
+    padding: 15px;
+}
