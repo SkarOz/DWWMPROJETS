@@ -1,6 +1,11 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 .grille{
-    background: #f0f0f0;
-    display: grid;
+ display: grid;
     grid-template-areas: 
         "logo logo logo"
         "main   main passif"
@@ -8,11 +13,10 @@
         "bouton empty empty"
         "footer empty empty";
         grid-template-columns: 200px 1fr 250px;
-        grid-template-rows: auto 1fre 1fre auto;
+        grid-template-rows: auto 1fre 1fr auto;
         gap: 10px;
         min-height: 100hv;
-        padding: 10px;
-        
+        padding: 10px;        
 }
 
 .logo{
