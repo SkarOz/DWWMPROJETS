@@ -19,8 +19,8 @@
   }
 
   .diaporama {
-    position: relative;
-    position-area: center;
+    position: absolute;
+    align-items: center;
     width: 100%;
   }
 
