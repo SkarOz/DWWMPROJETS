@@ -1,4 +1,5 @@
 .grille{
+    background: #f0f0f0;
     display: grid;
     grid-template-areas: 
         "logo logo logo"
@@ -11,7 +12,7 @@
         gap: 10px;
         min-height: 100hv;
         padding: 10px;
-        background: #f0f0f0;
+        
 }
 
 .logo{
@@ -20,9 +21,9 @@
 }
 
 .apropos{
-grid-area: main;
-background: white;
-padding: 10px;
+    grid-area: main;
+    background: white;
+    padding: 10px;
 }
 
 .passif{
