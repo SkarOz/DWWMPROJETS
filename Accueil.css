@@ -4,7 +4,8 @@
         "logo logo logo"
         "main   main passif"
         "main   main passif"
-        "footer footer footer";
+        "bouton empty empty"
+        "footer empty empty";
         grid-template-columns: 200px 1fr 250px;
         grid-template-rows: auto 1fre 1fre auto;
         gap: 10px;
@@ -26,6 +27,26 @@ padding: 10px;
 
 .passif{
     grid-area: passif;
-    background: aquamarine;
+    background: #c3b9ea;
     padding: 15px;
+}
+
+.travaux {
+    background: #b9e0ea;
+    grid-area: bouton;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.github {
+    background: #98d3a5;
+    grid-area: footer;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
 }

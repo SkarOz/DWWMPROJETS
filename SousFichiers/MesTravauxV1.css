@@ -1,0 +1,29 @@
+.grille{
+    display: grid;
+    grid-template-areas: 
+        "projactu projactu languactu"
+        "projactu projactu languactu"
+        "projets projets projets";
+        grid-template-columns: 200px 1fr 250px;
+        grid-template-rows: auto 1fre 1fre auto;
+        gap: 10px;
+        min-height: 100hv;
+        padding: 10px;
+        background: #f0f0f0;
+}
+ .projactu{
+    grid-area: projactu;
+    background-color: #eab9c8;
+ }
+
+ .languactu{
+    grid-area: languactu;
+    background-color: #c3b9ea;
+    padding: 15px;
+ }
+
+ .projets{
+    grid-area: projets;
+    padding: 15px;
+    
+ }
