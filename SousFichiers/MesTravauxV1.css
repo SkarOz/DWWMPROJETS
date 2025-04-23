@@ -7,16 +7,16 @@ body {
 .grille{
     display: grid;
     grid-template-areas: 
+        "logo logo logo"
         "projactu projactu languactu"
         "projactu projactu languactu"
         "projets projets projets";
         grid-template-columns: 200px 1fr 250px;
-        grid-template-rows: auto 1fre 1fre auto;
+        grid-template-rows: 200px 1fr 1fr;
         gap: 10px;
         min-height: 100hv;
         padding: 10px;
-        
-}
+ }
  .projactu{
     grid-area: projactu;
     background-color: #eab9c8;
@@ -35,5 +35,12 @@ body {
  .projets{
     grid-area: projets;
     padding: 15px;
-    
+    text-align: center;
+ }
+ .logo{
+    grid-area: logo;
+    text-align: center;
+ }
+ .retour{
+   grid-area: logo;
  }

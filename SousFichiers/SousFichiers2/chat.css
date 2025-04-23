@@ -1,0 +1,64 @@
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .zone {
+      width: 100%;
+      height: 100%;
+    }
+
+    .cat {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background: #f4c542;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .eyes {
+      display: flex;
+      gap: 30px;
+    }
+
+    .eye {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .pupil {
+      width: 15px;
+      height: 15px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      transition: all 0.3s ease;
+      top: 12px;
+      left: 12px;
+    }
+
+    /* Mouvement du regard par hover sur les zones */
+    .zone:nth-child(1):hover ~ .cat .pupil { top: 5px; left: 5px; }     /* Haut-gauche */
+    .zone:nth-child(2):hover ~ .cat .pupil { top: 5px; left: 12px; }    /* Haut-centre */
+    .zone:nth-child(3):hover ~ .cat .pupil { top: 5px; left: 20px; }    /* Haut-droite */
+    .zone:nth-child(4):hover ~ .cat .pupil { top: 12px; left: 5px; }    /* Milieu-gauche */
+    .zone:nth-child(5):hover ~ .cat .pupil { top: 12px; left: 12px; }   /* Centre */
+    .zone:nth-child(6):hover ~ .cat .pupil { top: 12px; left: 20px; }   /* Milieu-droite */
+    .zone:nth-child(7):hover ~ .cat .pupil { top: 20px; left: 5px; }    /* Bas-gauche */
+    .zone:nth-child(8):hover ~ .cat .pupil { top: 20px; left: 12px; }   /* Bas-centre */
+    .zone:nth-child(9):hover ~ .cat .pupil { top: 20px; left: 20px; }   /* Bas-droite */
