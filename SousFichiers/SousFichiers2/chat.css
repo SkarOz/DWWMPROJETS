@@ -31,10 +31,10 @@
     }
 
     .eye {
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
       background: white;
-      border-radius: 50%;
+      border-radius: 50% 65% 40% 40%/70% 70% 30% 30%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,13 +43,11 @@
 
     .pupil {
       width: 15px;
-      height: 15px;
+      height: 25px;
       background: black;
       border-radius: 50%;
       position: absolute;
       transition: all 0.3s ease;
-      top: 12px;
-      left: 12px;
     }
 
     .muzzle {
@@ -78,7 +76,7 @@
       height: 60%;
       width: 25%;
       background: #242424;
-      right: 20%;
+      right: 13%;
       border-radius: 30% 70% 0% 0%/100% 100% 0% 0%;
     }
 
@@ -87,11 +85,11 @@
 
     /* Mouvement du regard par hover sur les zones */
     .zone:nth-child(1):hover ~ .cat .pupil { top: 5px; left: 5px; }     /* Haut-gauche */
-    .zone:nth-child(2):hover ~ .cat .pupil { top: 5px; left: 12px; }    /* Haut-centre */
-    .zone:nth-child(3):hover ~ .cat .pupil { top: 5px; left: 20px; }    /* Haut-droite */
-    .zone:nth-child(4):hover ~ .cat .pupil { top: 12px; left: 5px; }    /* Milieu-gauche */
-    .zone:nth-child(5):hover ~ .cat .pupil { top: 12px; left: 12px; }   /* Centre */
-    .zone:nth-child(6):hover ~ .cat .pupil { top: 12px; left: 20px; }   /* Milieu-droite */
-    .zone:nth-child(7):hover ~ .cat .pupil { top: 20px; left: 5px; }    /* Bas-gauche */
-    .zone:nth-child(8):hover ~ .cat .pupil { top: 20px; left: 12px; }   /* Bas-centre */
-    .zone:nth-child(9):hover ~ .cat .pupil { top: 20px; left: 20px; }   /* Bas-droite */
+    .zone:nth-child(2):hover ~ .cat .pupil { top: 5px; left: 20px; }    /* Haut-centre */
+    .zone:nth-child(3):hover ~ .cat .pupil { top: 5px; left: 35px; }    /* Haut-droite */
+    .zone:nth-child(4):hover ~ .cat .pupil { top: 15px; left: 5px; }    /* Milieu-gauche */
+    .zone:nth-child(5):hover ~ .cat .pupil { top: 15px; left: 20px; }   /* Centre */
+    .zone:nth-child(6):hover ~ .cat .pupil { top: 15px; left: 40px; }   /* Milieu-droite */
+    .zone:nth-child(7):hover ~ .cat .pupil { top: 35px; left: 5px; }    /* Bas-gauche */
+    .zone:nth-child(8):hover ~ .cat .pupil { top: 35px; left: 20px; }   /* Bas-centre */
+    .zone:nth-child(9):hover ~ .cat .pupil { top: 35px; left: 40px; }   /* Bas-droite */
