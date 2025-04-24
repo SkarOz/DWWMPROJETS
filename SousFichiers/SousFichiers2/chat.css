@@ -18,7 +18,7 @@
       transform: translate(-50%, -50%);
       width: 200px;
       height: 200px;
-      background: #f4c542;
+      background: #242424;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -51,6 +51,39 @@
       top: 12px;
       left: 12px;
     }
+
+    .muzzle {
+      position: fixed;
+      top: 60%;
+      left: 50%;
+      height: 6%;
+      width: 10%;
+      background: #d4bdc6;
+      transform: translateX(-50%);
+      border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
+    }
+
+    .earleft {
+      position: absolute;
+      top: -40%;
+      height: 60%;
+      width: 25%;
+      background: #242424;
+      border-radius: 70% 30% 0% 0%/100% 100% 0% 0%;
+    }
+    
+    .earright {
+      position: absolute;
+      top: -40%;
+      height: 60%;
+      width: 25%;
+      background: #242424;
+      right: 20%;
+      border-radius: 30% 70% 0% 0%/100% 100% 0% 0%;
+    }
+
+    
+    
 
     /* Mouvement du regard par hover sur les zones */
     .zone:nth-child(1):hover ~ .cat .pupil { top: 5px; left: 5px; }     /* Haut-gauche */
